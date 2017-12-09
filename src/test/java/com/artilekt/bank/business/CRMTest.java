@@ -17,10 +17,10 @@ import java.util.List;
 public class CRMTest {
 	private CRM crm;
 	
-	private final static Client JOHN_SMITH = new Client("John", "Smith", "a001");
-	private final static Client JANE_DOE   = new Client("Jane", "Doe",   "a002");
-	private final static Client KATE_SMITH = new Client("Kate", "Smith", "a003");
-	private final static Client JOHN_DOE   = new Client("John", "Doe",   "a004");
+	private final static Client JOHN_SMITH = new Client("John", "Smith", "a001", "password");
+	private final static Client JANE_DOE   = new Client("Jane", "Doe",   "a002", "password");
+	private final static Client KATE_SMITH = new Client("Kate", "Smith", "a003", "password");
+	private final static Client JOHN_DOE   = new Client("John", "Doe",   "a004", "password");
 
 
 	@Before

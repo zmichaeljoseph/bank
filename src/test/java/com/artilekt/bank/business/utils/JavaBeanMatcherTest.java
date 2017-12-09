@@ -12,8 +12,8 @@ public class JavaBeanMatcherTest {
 
 	@Test
 	public void testBeanMatcher() {
-		Client cl1 = new Client("Vlad", null, "a111");
-		Client cl2 = new Client("Vlad", null, null);
+		Client cl1 = new Client("Vlad", null, "a111", "password");
+		Client cl2 = new Client("Vlad", null, null, "password");
 		
 		assertTrue(JavaBeanMatcher.propertiesOf(cl1).matchAllPropertiesOf(cl2));
 		assertFalse(JavaBeanMatcher.propertiesOf(cl2).matchAllPropertiesOf(cl1));

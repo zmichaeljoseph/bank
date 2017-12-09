@@ -8,18 +8,17 @@ public class Client implements Serializable {
 	private String firstName;
 	private String lastName;
 	private String driverLicense;
+	private String password;
 	
 	
-	public Client(String firstName, String lastName, String driverLicense) {
+	public Client(String firstName, String lastName, String driverLicense, String password) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.driverLicense = driverLicense;
+		this.setPassword(password);
 	}
 	
-	public Client() {}
-
-	
-	
+	public Client() {}	
 
 	@Override
 	public int hashCode() {
@@ -65,7 +64,13 @@ public class Client implements Serializable {
 	public String toString() {
 		return "Client [id = " + getClientId() + "]";
 	}
-	
-	
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	
 }

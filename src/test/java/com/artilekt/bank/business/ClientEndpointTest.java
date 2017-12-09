@@ -14,12 +14,12 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @SpringBootTest(webEnvironment=NONE)
 @DirtiesContext(classMode = ClassMode.BEFORE_EACH_TEST_METHOD)
 public class ClientEndpointTest {
-	private final static Client JOHN_SMITH = new Client("John", "Smith", "a001");
-	private final static Client JANE_DOE   = new Client("Jane", "Doe",   "a002");
-	private final static Client KATE_SMITH = new Client("Kate", "Smith", "a003");
-	private final static Client JOHN_DOE   = new Client("John", "Doe",   "a004");
+	private final static Client JOHN_SMITH = new Client("John", "Smith", "a001", "password");
+	private final static Client JANE_DOE   = new Client("Jane", "Doe",   "a002", "password");
+	private final static Client KATE_SMITH = new Client("Kate", "Smith", "a003", "password");
+	private final static Client JOHN_DOE   = new Client("John", "Doe",   "a004", "password");
 	
-	private final static Client JOHN_DOE_COPY   = new Client("John", "Doe",   "a004");
+	private final static Client JOHN_DOE_COPY   = new Client("John", "Doe",   "a004", "password");
 	
 	@Autowired
 	private CRM crm;

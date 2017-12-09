@@ -16,6 +16,7 @@ import com.artilekt.bank.dto.AccountCreationRequest;
 @RestController
 @RequestMapping("/clients")
 public class ClientEndpoint {
+	
 	@Autowired
 	private CRM crm;
 	

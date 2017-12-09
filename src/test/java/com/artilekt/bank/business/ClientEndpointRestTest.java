@@ -30,8 +30,8 @@ public class ClientEndpointRestTest {
     @Before
     public void init(){
         RestAssured.port = serverPort;
-        crm.addClient(new Client("Vlad", "Olenin", "a001"));
-        crm.addClient(new Client("Dmitri", "Olenin", "a002"));
+        crm.addClient(new Client("Vlad", "Olenin", "a001", "password"));
+        crm.addClient(new Client("Dmitri", "Olenin", "a002", "password"));
     }
 
     @Test
