@@ -1,5 +1,10 @@
 package com.artilekt.bank;
 
+/*
+ * @author    Vladimir Olenin
+ * @company   ROITraining
+ *
+ */
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
