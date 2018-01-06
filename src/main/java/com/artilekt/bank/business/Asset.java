@@ -38,6 +38,7 @@ public class Asset implements Serializable {
 	private String description;
 	private String year;
     private Double value;
+    
 	public String getType() {
 		return type;
 	}
