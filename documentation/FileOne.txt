@@ -1,5 +1,5 @@
 This is File One. An added change.
 This is a change.
 I am changing this file(in master, with changes from new feature after a merge conflict) again.
-This is a line of text that I'm adding in the new_feature branch.
+This is a line of text that I'm adding in the new_feature branch. new features.
 This line is added to the file in the file_one_changes branch. An added change.
