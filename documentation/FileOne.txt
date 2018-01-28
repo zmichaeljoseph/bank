@@ -5,3 +5,4 @@ This is a line of text that I'm adding in the new_feature branch.
 This line is added to the file in the file_one_changes branch. An added change.
 Changes after the initial push to github.
 Push to repository.
+More changes done locally.
