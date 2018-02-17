@@ -23,6 +23,13 @@ public class AssetEndpoint<am> {
 		return asset;
 	}
 	
+	@PutMapping
+	public Boolean setAssetValue(@RequestBody Asset asset, Double value) {
+		if (asset.setValue(value)) 
+			return true;
+		else return false;
+	}
+	
 	@GetMapping
 	public List<Asset> assetClients() {
 		return am.listAllAssets();
