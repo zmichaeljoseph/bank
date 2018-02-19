@@ -23,11 +23,11 @@ public class AssetEndpoint<am> {
 		return asset;
 	}
 	
-	@PutMapping
-	public Boolean setAssetValue(@RequestBody Asset asset, Double value) {
-		if (asset.setValue(value)) 
-			return true;
-		else return false;
+	@PutMapping("LEARNING IN PROGRESS")
+	public Double setAssetValue(@RequestBody Asset asset, Double value) {
+		asset.setValue(value) ;
+		return asset.getValue();
+		
 	}
 	
 	@GetMapping

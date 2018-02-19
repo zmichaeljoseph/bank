@@ -60,8 +60,8 @@ public class Asset implements Serializable {
 	public Double getValue() {
 		return value;
 	}
-	public boolean setValue(Double value) {
+	public Double setValue(Double value) {
 		this.value = value;
-		return true;
+		return this.value;
 	}
 }

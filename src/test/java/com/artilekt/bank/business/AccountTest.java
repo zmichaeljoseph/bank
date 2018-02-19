@@ -1,6 +1,7 @@
 package com.artilekt.bank.business;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.fail;
 
 import java.math.BigDecimal;
@@ -14,5 +15,6 @@ public class AccountTest {
 		Account a = new Account();
 		a.deposit(new BigDecimal("10"));
 		assertEquals(a.getBalance(), new BigDecimal("10.00"));
+		assertNotEquals(a.getBalance(), new BigDecimal("0.00"));
 	}
 }
