@@ -69,4 +69,7 @@ public class Asset implements Serializable {
 		this.value += valueIncrease;
 	}
 	
+	public void decreaseValue(double valueDecrease) {
+		this.value -= valueDecrease;
+	}
 }
